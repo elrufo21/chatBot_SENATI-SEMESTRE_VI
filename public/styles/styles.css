@@ -117,18 +117,18 @@ footer {
 }
 .about-section {
   padding: 50px 0;
-  /* Color de fondo */
+
 }
 .about-heading {
   font-size: 36px;
   font-weight: bold;
-  color: #cad2c5; /* Color del texto */
+  color: #cad2c5 !important;
   margin-bottom: 30px;
 }
 .about-description {
   font-size: 18px;
-  color: #fff; /* Color del texto */
-  line-height: 1.8; /* Espaciado entre líneas */
+  color: #fff !important; 
+  line-height: 1.8; 
 }
 .about-image {
   margin-bottom: 30px;
