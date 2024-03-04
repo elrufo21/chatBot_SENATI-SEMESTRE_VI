@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: #001219 !important;
+  color: #cad2c5;
 }
 nav {
   display: flex;
@@ -38,12 +39,12 @@ nav a span {
   z-index: -1;
   border-bottom: 2px solid #bef;
   border-radius: 15px;
-  transform: scale(0) translateY(50px); /* Fixed typo in translateY */
+  transform: scale(0) translateY(50px);
   opacity: 0;
   transition: 0.5s;
 }
 nav a:hover span {
-  transform: scale(1) translateY(0); /* Fixed typo in translateY */
+  transform: scale(1) translateY(0);
   opacity: 1;
 }
 .carousel-img {
@@ -59,7 +60,7 @@ nav a:hover span {
 
 .description {
   font-size: 1.2em;
-  color: #cad2c5;
+  color: #fff;
   text-align: center;
 }
 footer {
@@ -70,11 +71,73 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.card-body {
+  max-height: 150px;
+  overflow: hidden;
+}
 .img-card {
-  height: 300px; /* Ajusta la altura de la imagen según sea necesario */
+  height: 300px;
   object-fit: cover;
 }
-/* Media query for responsiveness */
+.contact-section {
+  color: #fff;
+  padding: 50px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+.about-section {
+  padding: 50px 0;
+  /* Color de fondo */
+}
+.about-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #cad2c5; /* Color del texto */
+  margin-bottom: 30px;
+}
+.about-description {
+  font-size: 18px;
+  color: #fff; /* Color del texto */
+  line-height: 1.8; /* Espaciado entre líneas */
+}
+.about-image {
+  margin-bottom: 30px;
+}
+@media (max-width: 60%) {
+  .about-image {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 600px) {
   nav a {
     font-size: 0.9em;
